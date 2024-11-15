@@ -30,7 +30,7 @@ function Navbar() {
                 
 
                 <div className=" text-black text-center px-6 py-3 font-bold shadow-md 
-                cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-md ">Already a Member?</div>
+                cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-md "> Cant Decide?</div>
                 <div className="bg-red-500 text-white text-center px-6 py-3 font-bold shadow-md 
                 cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-md ">
                 JOIN NOW</div>

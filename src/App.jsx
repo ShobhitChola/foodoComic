@@ -8,6 +8,7 @@ import MealPlanning from './components/MealPlanning'
 import {Route, Routes } from 'react-router-dom'
 import MealInfo from './components/MealInfo'
 import ExploreGlobal from './components/ExploreGlobal'
+import NutritionalInfo from './components/NutritionalInfo'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/planmeal' element={<MealPlanning />}/>
         <Route path='/:Recipe_id' element={<MealInfo />}/>
         <Route path='/explore' element={<ExploreGlobal />}/>
+        <Route path='/nutritionalInfo' element={<NutritionalInfo/>} />
       </Routes>
       
     </>

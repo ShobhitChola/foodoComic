@@ -38,7 +38,7 @@ const Home = () => {
                       Explore Global Cuisine
                   </button>
                 </NavLink>
-                <NavLink>
+                <NavLink to={"nutritionalInfo"}> 
                   <button className='px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md hover:bg-green-600 transition duration-200'>
                       Get Nutritional Insights
                   </button>
