@@ -9,6 +9,7 @@ import {Route, Routes } from 'react-router-dom'
 import MealInfo from './components/MealInfo'
 import ExploreGlobal from './components/ExploreGlobal'
 import NutritionalInfo from './components/NutritionalInfo'
+import RecipeOfTheDay from './components/RecipeOfTheDay'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/:Recipe_id' element={<MealInfo />}/>
         <Route path='/explore' element={<ExploreGlobal />}/>
         <Route path='/nutritionalInfo' element={<NutritionalInfo/>} />
+        <Route path='/RecipeOfTheDay' element={<RecipeOfTheDay />} />
       </Routes>
       
     </>
