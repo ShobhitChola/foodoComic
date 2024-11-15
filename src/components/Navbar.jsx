@@ -12,35 +12,32 @@ function Navbar() {
         setIsDropdownOpen(false);
     };
 
-    return (
-        <div className='w-full h-[10vh] flex justify-between items-center bg-white px-5 shadow-md'>
-            <h1>FoodoComic</h1>
-            <div className='flex items-center gap-5'>
-                {/* Dropdown menu trigger */}
-                <div 
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    className='relative cursor-pointer text-orange-500'
-                >
-                    FEATURES
-                    <span className='ml-1'>▾</span>
-                    
-                    {/* Dropdown menu */}
-                    {isDropdownOpen && (
-                        <div className='absolute top-full left-0 mt-2 w-40 bg-white shadow-lg rounded-md'>
-                            <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>ADD & IMPORT</div>
-                            <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>ORGANISE & SEARCH</div>
-                            <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>PLAN, SHOP, COOK</div>
-                            <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>WEB APP</div>
-                            <div className='px-4 py-2 hover:bg-gray-100 cursor-pointer'>VIDEO</div>
-                        </div>
-                    )}
+    return(
+        <div className='w-full h-[10vh] flex justify-between items-center z-10 bg-[#fef7f7] px-5 shadow-md relative'>
+
+            <div className="flex items-center z-20">
+                <img 
+                    src="https://i.pinimg.com/736x/7c/41/cf/7c41cf02f5f829b9ea488ce207b5a1ef.jpg"
+                    className="h-[100px] w-[100px] ml-56 " 
+                />
+                <div>
+                    <h1 className="text-4xl ml-4 font-bold">food O' Mania</h1>
                 </div>
-                <div>PRICING</div>
-                <div>CONTACT US</div>
+            </div>
+
+            <div className='flex align-bottom items-center pr-56 space-x-8 text-right z-20'>
+                {/* Dropdown menu trigger */}
+                
+
+                <div className=" text-black text-center px-6 py-3 font-bold shadow-md 
+                cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-md ">Already a Member?</div>
+                <div className="bg-red-500 text-white text-center px-6 py-3 font-bold shadow-md 
+                cursor-pointer hover:bg-red-600 transition duration-300 ease-in-out rounded-md ">
+                JOIN NOW</div>
+
             </div>
         </div>
     );
-}
+};
 
 export default Navbar;
